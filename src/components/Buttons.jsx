@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Link,useNavigate } from "react-router-dom";
 
 const Container=styled.div`
 width: 100%;
@@ -23,9 +24,15 @@ function Buttons() {
   return (
     <div>
       <Container>
+      <Link to="/" >
 <Button>Dashboard</Button>
+      </Link>
+      <Link to="/report" >
 <Button>Report</Button>
+      </Link>
+      <Link to="/profile" >
 <Button>Profile</Button>
+      </Link>
       </Container>
     </div>
   )
